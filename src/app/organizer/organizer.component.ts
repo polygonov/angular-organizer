@@ -12,11 +12,11 @@ import {switchMap} from 'rxjs/operators';
 export class OrganizerComponent implements OnInit {
 
   form: FormGroup
-  tasks: Task[] = []
+  tasks: Task[] = [];
 
   constructor(
-              private dateService: DateService,
-              private tasksService: TasksService
+              public dateService: DateService,
+              public tasksService: TasksService
   ) { }
 
   ngOnInit() {
